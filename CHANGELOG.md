@@ -23,3 +23,5 @@ This file tracks clone-series updates.
 - add short link to full online link.
 - add all short link to online link.
 - add proper head in contact and about file.
+- add sitemap link in robots text.
+- add span on library in about and contact footer. 

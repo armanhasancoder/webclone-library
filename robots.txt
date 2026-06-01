@@ -9,4 +9,4 @@ Allow: /
 Disallow: /404.html
 
 
-# Sitemap: https://armanhasancoder.github.io/webclone-library/
+# Sitemap: https://armanhasancoder.github.io/webclone-library/sitemap.xml
