@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =========================
+         BASIC SETUP
+    ========================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =========================
+         SEO
+    ========================== -->
+    <title>WebClone Library | Real Website Clones for Frontend Learning</title>
+
+    <meta name="description"
+        content="WebClone Library is a free collection of real-world website clones built for students and developers. Study layouts, analyze code structure, and improve HTML, CSS, and JavaScript skills through practical frontend projects.">
+
+    <meta name="author" content="Arman Hasan">
+
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <meta name="theme-color" content="#000000">
+
+    <!-- =========================
+         CANONICAL URL
+         ENABLE AFTER DOMAIN SETUP
+    ========================== -->
+
+    <!--
+    <link rel="canonical" href="https://your-domain.com/">
+    -->
+
+    <!-- =========================
+         FAVICONS
+    ========================== -->
+
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- =========================
+         PWA
+    ========================== -->
+
+    <meta name="apple-mobile-web-app-title" content="WebClone Library">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- =========================
+         OPEN GRAPH
+         ENABLE DOMAIN & IMAGE LATER
+    ========================== -->
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WebClone Library">
+
+    <meta property="og:title" content="WebClone Library | Real Website Clones for Frontend Learning">
+
+    <meta property="og:description"
+        content="Explore real-world website clones, learn frontend development, and improve your HTML, CSS, and JavaScript skills through practical projects.">
+
+    <!--
+    <meta property="og:url"
+        content="https://your-domain.com/">
+
+    <meta property="og:image"
+        content="https://your-domain.com/assets/images/og-image.png">
+    -->
+
+    <!-- =========================
+         TWITTER / X
+         ENABLE IMAGE LATER
+    ========================== -->
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="WebClone Library | Real Website Clones">
+
+    <meta name="twitter:description"
+        content="A scalable collection of real-world website clones handcrafted for learning modern frontend development.">
+
+    <!--
+    <meta name="twitter:image"
+        content="https://your-domain.com/assets/images/og-image.png">
+    -->
+
+    <!-- =====================================
+         ORGANIZATION SCHEMA
+    ====================================== -->
+
+    <!--
+    FUTURE ADDITIONS:
+
+    "url": "https://your-domain.com",
+
+    "logo": "https://your-domain.com/assets/images/logo.png",
+
+    "sameAs": [
+      "https://github.com/yourusername",
+      "https://linkedin.com/in/yourusername",
+      "https://x.com/yourusername"
+    ]
+    -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "WebClone Library",
+  "description": "A free collection of real-world website clones built for students and developers to learn frontend development through practical HTML, CSS and JavaScript projects.",
+  "founder": {
+    "@type": "Person",
+    "name": "Arman Hasan"
+  }
+}
+</script>
+
+    <!-- =====================================
+         COLLECTION PAGE SCHEMA
+    ====================================== -->
+
+    <!--
+    ENABLE LATER:
+
+    "url": "https://your-domain.com"
+    -->
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "WebClone Library",
+  "description": "A free collection of real-world website clones built for students and developers to learn frontend development through practical HTML, CSS and JavaScript projects.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "WebClone Library"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Frontend Development"
+  }
+}
+</script>
+
+    <!-- =========================
+         PERFORMANCE
+    ========================== -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- =========================
+         STYLESHEET
+    ========================== -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================
+   CONTACT PAGE BASE
+========================= */
+
+        .input-error {
+            border: 1px solid rgba(255, 70, 70, 0.9) !important;
+            box-shadow: 0 0 0 4px rgba(255, 70, 70, 0.14) !important;
+        }
+
+        .placeholder-error::placeholder {
+            color: rgba(255, 70, 70, 0.95) !important;
+            font-weight: 700;
+        }
+
+        .shake {
+            animation: shakeAnim 0.35s ease;
+        }
+
+        @keyframes shakeAnim {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-6px);
+            }
+
+            50% {
+                transform: translateX(6px);
+            }
+
+            75% {
+                transform: translateX(-6px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* =========================
+   FORM TEXT
+========================= */
+
+        .form-note {
+            margin-top: 12px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--pera-color);
+            line-height: 1.5;
+        }
+
+        .form-note.success {
+            color: rgba(34, 211, 238, 0.95);
+        }
+
+        .form-note.error {
+            color: rgba(255, 70, 70, 0.95);
+        }
+
+        /* =========================
+   LAYOUT
+========================= */
+
+        .contact-container {
+            display: flex;
+            gap: 40px;
+            width: 100%;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        .contact-details,
+        .contact-form {
+            background-color: var(--bg-card);
+            min-height: 500px;
+            width: 40%;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-details h2,
+        .contact-form h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-details-pera-group {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-details-pera-group p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--link-color);
+        }
+
+        .active-link {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        /* =========================
+   FORM
+========================= */
+
+        .contact-form-input-group {
+            margin-top: 30px;
+        }
+
+        form {
+            display: grid;
+            gap: 12px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--pera-color);
+            font-family: inherit;
+            outline: none;
+            transition: 0.25s ease;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: var(--border-active);
+        }
+
+        textarea {
+            resize: none;
+            min-height: 160px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: rgba(255, 255, 255, 0.21);
+        }
+
+        .contact-form .btn {
+            width: 100%;
+        }
+
+        /* =========================
+   TABLET
+========================= */
+
+        @media (max-width: 1111px) {
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-details,
+            .contact-form {
+                width: 80%;
+                min-height: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                gap: 24px;
+            }
+
+            .contact-details,
+            .contact-form {
+                width: 100%;
+                padding: 18px;
+            }
+
+            .contact-details h2,
+            .contact-form h2 {
+                margin-bottom: 16px;
+                font-size: 28px;
+            }
+
+            .contact-details-pera-group {
+                margin-top: 24px;
+                gap: 16px;
+            }
+
+            .contact-form-input-group {
+                margin-top: 24px;
+            }
+
+            input,
+            textarea {
+                padding: 11px 13px;
+                border-radius: 10px;
+            }
+
+            textarea {
+                min-height: 140px;
+            }
+        }
+
+        /* =========================
+   MOBILE
+========================= */
+
+        @media (max-width: 480px) {
+            .contact-container {
+                gap: 18px;
+            }
+
+            .contact-details,
+            .contact-form {
+                padding: 16px;
+                border-radius: 10px;
+            }
+
+            .contact-details h2,
+            .contact-form h2 {
+                font-size: 24px;
+            }
+
+            .contact-details-pera-group p {
+                font-size: 14px;
+                line-height: 1.5;
+                word-break: break-word;
+            }
+
+            .form-note {
+                font-size: 11px;
+            }
+
+            textarea {
+                min-height: 130px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-bar">
+
+            <div class="logo">
+                <a href="index.html" class="logo">
+                    <img src="assets/icons/main-logo.svg" alt="main-logo-image" class="logo-img">
+                    <p class="logo-text">WebClone <span>Library</span></p>
+                </a>
+            </div>
+
+
+            <div class="nav-link-row">
+
+                <a class="nav-link" href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"
+                        class="nav-link-svg">
+                        <path
+                            d="M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z">
+                        </path>
+                    </svg>
+                    Home
+                </a>
+                <a class="nav-link" href="about.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"
+                        class="nav-link-svg">
+                        <path
+                            d="M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z">
+                        </path>
+                    </svg>
+                    About
+                </a>
+                <a class="nav-link active" href="contact.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"
+                        class="nav-link-svg active">
+                        <path
+                            d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z">
+                        </path>
+                    </svg>
+                    Contact
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="contact-container">
+                <div class="contact-details">
+                    <h2>Contact Information</h2>
+                    <div class="divider"></div>
+                    <div class="contact-details-pera-group">
+                        <p><img src="assets/icons/mail.svg" alt="mail svg"><a class="active-link"
+                                href="mailto:arman.hasan.coder@gmail.com">arman.hasan.coder@gmail.com</a></p>
+
+                        <p><img src="assets/icons/globe.svg" alt="portfolio svg"><a
+                                href="https://armanhasancoder.github.io/portfolio" class="active-link" target="_blank"
+                                rel="noopener noreferrer">Portfolio</a></p>
+
+                        <p><img src="assets/icons/instagram.svg" alt="instagram svg"><a
+                                href="https://www.instagram.com/armanhasancoder/" class="active-link" target="_blank"
+                                rel="noopener noreferrer">Instagram</a></p>
+
+                        <p><img src="assets/icons/linkedin.svg" alt="linkedin svg"><a
+                                href="https://www.linkedin.com/in/armancoder/" class="active-link" target="_blank"
+                                rel="noopener noreferrer">linkedin</a></p>
+
+                        <p><img src="assets/icons/mark-github.svg" alt="github svg"><a
+                                href="https://github.com/armanhasancoder" class="active-link" target="_blank"
+                                rel="noopener noreferrer">Github</a>
+                        </p>
+
+                        <!-- <p><img src="assets/icons/facebook.svg" alt="facebook svg"><a href="https://www.facebook.com"
+                                class="active-link" target="_blank">Facebook</a>
+                        </p> -->
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Direct Message</h2>
+                    <div class="divider"></div>
+
+                    <div class="contact-form-input-group">
+                        <form id="contactForm" action="https://formspree.io/f/mpqneekl" method="POST" novalidate>
+                            <input type="text" name="name" placeholder="Full Name" required />
+                            <input type="email" name="email" placeholder="Email Address" required />
+                            <input type="tel" name="number" placeholder="Phone" required />
+                            <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+
+                            <button class="btn btn-primary" type="submit">Send Message</button>
+
+                            <p id="formMsg" class="form-note"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">
+            <a href="index.html" class="logo">
+                <img src="assets/icons/main-logo.svg" alt="main-logo-image" class="logo-img">
+                <p class="logo-text">WebClone Library</p>
+            </a>
+        </div>
+        <p>© 2026 Web Clone Library. Built for learning and practice purposes only.</p>
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
