@@ -17,6 +17,7 @@ This file tracks clone-series updates.
 
 <!-- website is successfully host  -->
 
-- add canonical link
-- add og url and og image
-- add url in robots.txt
+- add canonical link.
+- add og url and og image.
+- add url in robots.txt.
+- add short link to full online link.
