@@ -98,3 +98,45 @@ if (contactForm) {
     }
   });
 }
+
+
+let startX = 0;
+let endX = 0;
+
+document.addEventListener("touchstart", (e) => {
+    startX = e.changedTouches[0].screenX;
+}, false);
+
+document.addEventListener("touchend", (e) => {
+    endX = e.changedTouches[0].screenX;
+    handleSwipe();
+}, false);
+
+function handleSwipe() {
+    const swipeDistance = startX - endX;
+
+    // Minimum swipe distance
+    if (Math.abs(swipeDistance) < 50) return;
+
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+    if (currentPage === "index.html") {
+        if (swipeDistance > 0) {
+            window.location.href = "about.html";
+        }
+    }
+
+    else if (currentPage === "about.html") {
+        if (swipeDistance > 0) {
+            window.location.href = "contact.html";
+        } else {
+            window.location.href = "index.html";
+        }
+    }
+
+    else if (currentPage === "contact.html") {
+        if (swipeDistance < 0) {
+            window.location.href = "about.html";
+        }
+    }
+}
