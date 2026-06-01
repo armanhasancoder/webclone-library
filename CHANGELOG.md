@@ -14,3 +14,9 @@ This file tracks clone-series updates.
 ## 2026-05-32 
 - code contact section.
 - make responsive website.
+
+<!-- website is successfully host  -->
+
+- add canonical link
+- add og url and og image
+- add url in robots.txt

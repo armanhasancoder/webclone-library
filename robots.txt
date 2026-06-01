@@ -8,8 +8,5 @@ Allow: /
 # Block system files (optional)
 Disallow: /404.html
 
-# =====================================
-# ENABLE AFTER DOMAIN SETUP
-# =====================================
 
-# Sitemap: https://your-domain.com/sitemap.xml
+# Sitemap: https://armanhasancoder.github.io/webclone-library/

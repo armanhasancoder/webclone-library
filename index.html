@@ -6,6 +6,7 @@
          BASIC SETUP
     ========================== -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- =========================
@@ -16,6 +17,9 @@
     <meta name="description"
         content="WebClone Library is a free collection of real-world website clones built for students and developers. Study layouts, analyze code structure, and improve HTML, CSS, and JavaScript skills through practical frontend projects.">
 
+    <meta name="keywords"
+        content="website clones, frontend projects, html css javascript projects, web development learning, clone websites, frontend practice projects, webclone library">
+
     <meta name="author" content="Arman Hasan">
 
     <meta name="robots" content="index, follow">
@@ -25,34 +29,31 @@
 
     <!-- =========================
          CANONICAL URL
-         ENABLE AFTER DOMAIN SETUP
     ========================== -->
+    <link rel="canonical" href="https://armanhasancoder.github.io/webclone-library/">
 
-    <!--
-    <link rel="canonical" href="https://your-domain.com/">
-    -->
+    <!-- =========================
+         LANGUAGE
+    ========================== -->
+    <link rel="alternate" hreflang="en" href="https://armanhasancoder.github.io/webclone-library/">
 
     <!-- =========================
          FAVICONS
     ========================== -->
-
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
     <!-- =========================
          PWA
     ========================== -->
-
     <meta name="apple-mobile-web-app-title" content="WebClone Library">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="site.webmanifest">
 
     <!-- =========================
          OPEN GRAPH
-         ENABLE DOMAIN & IMAGE LATER
     ========================== -->
-
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="WebClone Library">
 
@@ -62,19 +63,18 @@
     <meta property="og:description"
         content="Explore real-world website clones, learn frontend development, and improve your HTML, CSS, and JavaScript skills through practical projects.">
 
-    <!--
     <meta property="og:url"
-        content="https://your-domain.com/">
+        content="https://armanhasancoder.github.io/webclone-library/">
 
     <meta property="og:image"
-        content="https://your-domain.com/assets/images/og-image.png">
-    -->
+        content="https://armanhasancoder.github.io/webclone-library/og-image.png">
+
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- =========================
          TWITTER / X
-         ENABLE IMAGE LATER
     ========================== -->
-
     <meta name="twitter:card" content="summary_large_image">
 
     <meta name="twitter:title"
@@ -83,57 +83,38 @@
     <meta name="twitter:description"
         content="A scalable collection of real-world website clones handcrafted for learning modern frontend development.">
 
-    <!--
     <meta name="twitter:image"
-        content="https://your-domain.com/assets/images/og-image.png">
-    -->
+        content="https://armanhasancoder.github.io/webclone-library/og-image.png">
 
-    <!-- =====================================
+    <!-- =========================
          ORGANIZATION SCHEMA
-    ====================================== -->
-
-    <!--
-    FUTURE ADDITIONS:
-
-    "url": "https://your-domain.com",
-
-    "logo": "https://your-domain.com/assets/images/logo.png",
-
-    "sameAs": [
-      "https://github.com/yourusername",
-      "https://linkedin.com/in/yourusername",
-      "https://x.com/yourusername"
-    ]
-    -->
-
+    ========================== -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "WebClone Library",
+  "url": "https://armanhasancoder.github.io/webclone-library/",
   "description": "A free collection of real-world website clones built for students and developers to learn frontend development through practical HTML, CSS and JavaScript projects.",
   "founder": {
     "@type": "Person",
     "name": "Arman Hasan"
-  }
+  },
+  "sameAs": [
+    "https://github.com/armanhasancoder"
+  ]
 }
 </script>
 
-    <!-- =====================================
+    <!-- =========================
          COLLECTION PAGE SCHEMA
-    ====================================== -->
-
-    <!--
-    ENABLE LATER:
-
-    "url": "https://your-domain.com"
-    -->
-
+    ========================== -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "WebClone Library",
+  "url": "https://armanhasancoder.github.io/webclone-library/",
   "description": "A free collection of real-world website clones built for students and developers to learn frontend development through practical HTML, CSS and JavaScript projects.",
   "publisher": {
     "@type": "Organization",
@@ -147,15 +128,8 @@
 </script>
 
     <!-- =========================
-         PERFORMANCE
-    ========================== -->
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- =========================
          STYLESHEET
     ========================== -->
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -164,7 +138,7 @@
         <div class="nav-bar">
 
             <div class="logo">
-                <a href="index.html" class="logo">
+                <a href="index.html" class="logo" aria-label="WebClone Library Home">
                     <img src="assets/icons/main-logo.svg" alt="WebClone Library Logo" class="logo-img">
                     <p class="logo-text">WebClone <span>Library</span></p>
                 </a>
