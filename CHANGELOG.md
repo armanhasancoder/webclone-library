@@ -12,5 +12,5 @@ This file tracks clone-series updates.
 - add contact.html.
 
 ## 2026-05-32 
-- code contact section
-- make responsive website
+- code contact section.
+- make responsive website.
