@@ -21,3 +21,5 @@ This file tracks clone-series updates.
 - add og url and og image.
 - add url in robots.txt.
 - add short link to full online link.
+- add all short link to online link.
+- add proper head in contact and about file.
