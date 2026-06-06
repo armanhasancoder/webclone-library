@@ -30,3 +30,4 @@ This file tracks clone-series updates.
 - add amazon project.
 - add images of amazon clone project.
 - update index.html file add amazone project card.
+- disable scroll script.
