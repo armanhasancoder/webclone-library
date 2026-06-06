@@ -25,3 +25,8 @@ This file tracks clone-series updates.
 - add proper head in contact and about file.
 - add sitemap link in robots text.
 - add span on library in about and contact footer. 
+
+# 2026-06-7
+- add amazon project.
+- add images of amazon clone project.
+- update index.html file add amazone project card.
