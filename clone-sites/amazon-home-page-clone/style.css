@@ -147,10 +147,18 @@ body {
     border-radius: 4px 0px 0px 4px;
 }
 
+.search-dropdown:hover{
+    background-color: rgba(255, 255, 255, 0.705);
+}
+
 .search-btn {
     background-color: var(--bg-btn);
     border-radius: 0px 4px 4px 0px;
 
+}
+
+.search-btn:hover{
+    background-color: #febd69da ;
 }
 
 .lang-container {
